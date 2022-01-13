@@ -51,46 +51,46 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                     as="h3"
                     className="text-lg leading-6 font-medium text-gray-900"
                   >
-                    How to play
+                    Как играть
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      Guess the WORDLE in 6 tries. After each guess, the color
-                      of the tiles will change to show how close your guess was
-                      to the word.
+                      Угадайте загаданное слово с шести попыток.
+
+                      После каждой попытки цвет букв будет менятся, чтобы показать какие буквы есть в загаданном слове!
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="W" status="correct" />
-                      <Cell value="E" />
-                      <Cell value="A" />
-                      <Cell value="R" />
-                      <Cell value="Y" />
+                      <Cell value="К" status="correct" />
+                      <Cell value="Ы" />
+                      <Cell value="Я" />
+                      <Cell value="О" />
+                      <Cell value="Д" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      The letter W is in the word and in the correct spot.
+                      Буква <strong>«К»</strong> есть в слове и стоит в правильном месте.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="P" />
-                      <Cell value="I" />
-                      <Cell value="L" status="present" />
-                      <Cell value="O" />
-                      <Cell value="T" />
+                      <Cell value="Ы" />
+                      <Cell value="Я" />
+                      <Cell value="А" status="present" />
+                      <Cell value="Д" />
+                      <Cell value="Ь" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      The letter L is in the word but in the wrong spot.
+                      Буква <strong>«К»</strong> есть в слове, но стоит не правильном месте.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="V" />
-                      <Cell value="A" />
-                      <Cell value="G" />
-                      <Cell value="U" status="absent" />
-                      <Cell value="E" />
+                      <Cell value="О" />
+                      <Cell value="Я" />
+                      <Cell value="Ч" />
+                      <Cell value="Щ" status="absent" />
+                      <Cell value="Д" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      The letter U is not in the word in any spot.
+                      Буквы <strong>«Щ»</strong> нет в слове.
                     </p>
                   </div>
                 </div>
